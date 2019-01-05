@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ShadowDeveloper/curso-react#readme",
   "devDependencies": {
-    "webpack": "^4.28.3"
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
   }
 }
