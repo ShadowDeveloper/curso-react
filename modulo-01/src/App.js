@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import LearningProps from './aulas/learning-props';
+import HtmlAttributes from './aulas/html-attributes';
+import GetDefaultProps from './aulas/getDefaultProps';
 
-// import logo from './logo.svg';
 
 
 
@@ -12,6 +13,8 @@ class Title extends Component {
       <div>
         <h1>Renderização de todas as aulas</h1>
         <LearningProps name="Learning props - Isso é uma props" />
+        <HtmlAttributes />
+        <GetDefaultProps />
       </div>
     )
   }
