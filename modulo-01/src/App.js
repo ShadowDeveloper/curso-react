@@ -9,10 +9,16 @@ import LikeButton from './aulas/like-button';
 
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      text: "Renderização de todas as aulas"
+    }
+  }
   render() {
     return (
       <div className="main-container">
-        <h1>Renderização de todas as aulas</h1>
+        <h1>{this.state.text}</h1>
         <LearningProps name="Learning props - Isso é uma props" />
         <HtmlAttributes onClick={function (e) {
           console.log(e);
@@ -26,13 +32,12 @@ class App extends Component {
           // }) //Método com function normal, necessita de um return
         }
 
-        <ButtonChildren><strong>Botão</strong> children</ButtonChildren>
+        <ButtonChildren handleClick={() => this.setState({ text: "Outro Titulo da página setado" })}><strong>Alterar</strong> Titulo Página</ButtonChildren>
         <LikeButton></LikeButton>
       </div>
     )
   }
 }
-
 
 
 export default App;
