@@ -5,6 +5,7 @@ import HtmlAttributes from './aulas/html-attributes';
 import GetDefaultProps from './aulas/getDefaultProps';
 import PropKey from './aulas/prop-key';
 import ButtonChildren from './aulas/buttonChildren';
+import LikeButton from './aulas/like-button';
 
 
 class App extends Component {
@@ -25,8 +26,8 @@ class App extends Component {
           // }) //Método com function normal, necessita de um return
         }
 
-        <ButtonChildren><span>Rodrigo</span> Botão</ButtonChildren>
-
+        <ButtonChildren><strong>Botão</strong> children</ButtonChildren>
+        <LikeButton></LikeButton>
       </div>
     )
   }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ButtonChildren extends Component {
     render(){
         return(
-           <button>{this.props.children}</button> 
+           <button onClick={this.props.handleClick}>{this.props.children}</button> 
         )
     }
 }
