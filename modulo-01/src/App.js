@@ -9,12 +9,13 @@ import PropKey from './aulas/prop-key';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="main-container">
         <h1>Renderização de todas as aulas</h1>
         <LearningProps name="Learning props - Isso é uma props" />
-        <HtmlAttributes />
+        <HtmlAttributes onClick={function (e) {
+          console.log(e);
+        }} />
         <GetDefaultProps />
-
         {['blue', 'red', 'yellow'].map((square, index) => (
           <PropKey key={index} color={square} />
         )) // Método com arrow function
@@ -22,6 +23,9 @@ class App extends Component {
           //   return <KeySquare color={square} />
           // }) //Método com function normal, necessita de um return
         }
+
+
+
       </div>
     )
   }
