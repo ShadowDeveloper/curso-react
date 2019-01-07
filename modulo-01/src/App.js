@@ -3,6 +3,7 @@ import './App.css';
 import LearningProps from './aulas/learning-props';
 import HtmlAttributes from './aulas/html-attributes';
 import GetDefaultProps from './aulas/getDefaultProps';
+import PropKey from './aulas/prop-key';
 
 
 class App extends Component {
@@ -13,6 +14,14 @@ class App extends Component {
         <LearningProps name="Learning props - Isso é uma props" />
         <HtmlAttributes />
         <GetDefaultProps />
+
+        {['blue', 'red', 'yellow'].map((square, index) => (
+          <PropKey key={index} color={square} />
+        )) // Método com arrow function
+          // ['blue', 'red', 'yellow'].map(function (square) {
+          //   return <KeySquare color={square} />
+          // }) //Método com function normal, necessita de um return
+        }
       </div>
     )
   }
