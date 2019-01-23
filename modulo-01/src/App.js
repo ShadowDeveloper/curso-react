@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import LearningProps from './aulas/learning-props';
 import HtmlAttributes from './aulas/html-attributes';
-import GetDefaultProps from './aulas/getDefaultProps';
+import GetDefaultProps from './aulas//get-default-props';
 import PropKey from './aulas/prop-key';
-import ButtonChildren from './aulas/buttonChildren';
+import ButtonChildren from './aulas/button-children';
 import LikeButton from './aulas/like-button';
+import {Statefull, Stateless} from './aulas/statefull-vs-stateless';
 
 
 class App extends Component {
@@ -34,6 +35,10 @@ class App extends Component {
 
         <ButtonChildren handleClick={() => this.setState({ text: "Outro Titulo da página setado" })}><strong>Alterar</strong> Titulo Página</ButtonChildren>
         <LikeButton></LikeButton>
+
+        <Statefull />
+        <Stateless color={44} />
+
       </div>
     )
   }
