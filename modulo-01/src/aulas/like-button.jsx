@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonChildren from './buttonChildren';
+import ButtonChildren from './button-children';
 
 
 class LikeButton extends Component {
