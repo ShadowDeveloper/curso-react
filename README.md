@@ -1,6 +1,5 @@
 # curso-react
-Curso React - Marco Bruno
-Udemy React Ninja Daciuk
+Praticando curso: Udemy React Ninja Fernando Daciuk
 
 Notatiosns: 
 export default ClassName; // Export JavaScript ES6 module
